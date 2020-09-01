@@ -10,4 +10,3 @@ if wynik ==1:
   print(True)
 else:
   print(False)
-  
