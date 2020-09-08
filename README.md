@@ -1,4 +1,5 @@
 # Palindrome
+Modul.4.2
 
 1.commit - Definicja funkcji
 * Definiujemy funkcję sprawdzającą czy dany wyraz jest palindromem.
