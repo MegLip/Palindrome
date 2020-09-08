@@ -4,9 +4,4 @@ def palindrome(string):      #commit1 Definicja funkcji
         return True
     else:
         return False
-string = "level"        #commit3 sprawdz palindrom
-wynik = palindrome(string)
-if wynik ==1:
-  print(True)
-else:
-  print(False)
+print(palindrome("level"))        #commit3 sprawdz palindrom
