@@ -1,4 +1,4 @@
-# Palindrome
+# palindrome
 Modul.4.2
 
 1.commit - Definicja funkcji
