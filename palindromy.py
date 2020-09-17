@@ -1,6 +1,5 @@
 # palindromy - Moduł 4.2
 
-
 def palindrome(string):        #commit1 Definicja funkcji 
     '''
     * Definiujemy funkcję sprawdzającą czy dany wyraz jest palindromem (Palindrom to słowo, które czytane od lewej do prawej i od prawej do lewej brzmi tak samo).
