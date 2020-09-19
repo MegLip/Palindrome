@@ -1,16 +1,26 @@
 # palindromy - Moduł 4.2
+#
+#    '''
+#    * Definiujemy funkcję sprawdzającą czy dany wyraz/zdanie jest palindromem (Palindrom czytany od lewej do prawej i od prawej do lewej brzmi tak samo).
+#    * Tworzymy zmienną, dla której chcemy sprawdzić czy nasz wyraz/zdanie jest palindromem.
+#    * Odwracamy wszystkie litery zmiennej i porównujemy z wersją nieodwróconą. Jeśli są sobie równe, dany wyraz/zdanie jest palindromem.
+#    * Funkcja jako wynik zwraca wartośc True lub False.
+#    '''
 
-def palindrome(string):        #commit1 Definicja funkcji 
-    '''
-    * Definiujemy funkcję sprawdzającą czy dany wyraz jest palindromem (Palindrom to słowo, które czytane od lewej do prawej i od prawej do lewej brzmi tak samo).
-    * Tworzymy zmienną string, dla której podajemy wyraz, który chcemy sprawdzić.
-    * Odwracamy wszystkie litery wyrazu (string[::-1]) i porównujemy oryginalny wyraz z odwróconym. Jeśli są sobie równe, wyraz jest palindromem.
-    * Funkcja zwraca wartość True dla wyrazów, które są palindromem (bądź False, dla wyrazów, które palindromem nie są).
-    '''
-    if string == string[::-1]:    #commit2 Odwrócone litery
+def palindrome(word):                                        #1 Definicja funkcji 
+    if word == word[::-1]:                                   #2 Odwrócone litery
         return True
     else:
         return False
-print(palindrome("level"))           #commit3 sprawdz palindrom
-print(palindrome("kobylamamalybok"))
-print(palindrome("nowytarggóryzakopanenapokazyróggratywon"))
+print(palindrome("level"))                                   #3 Sprawdź palindrom
+print(palindrome("ananas"))
+
+
+def palindrome_s(sentence):                                  #4 Definicja funkcji
+  new = sentence.lower().replace(" ","").replace(",","")     #5 Małe litery, pomienięcie spacji i przecinków
+  if new[::1] == new[::-1]:                                  #6 Odwrócone litery
+    return True
+  else:
+    return False
+print(palindrome_s("Kobyła ma mały bok,,,"))                 #7 Sprawdź palindrom
+print(palindrome_s("Ala ma kota"))
